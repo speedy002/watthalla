@@ -3,98 +3,90 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Datenschutzerklärung – OVMS Dashboard</title>
+<title>Datenschutzerklärung – Watthalla</title>
 <style>
   :root {
-    --text: #161a22;
-    --muted: #5f636d;
-    --line: #e2e5ea;
-    --akzent: #0b72e7;
-    --flaeche: #f7f8fa;
+    --ink: #1c1f23;
+    --muted: #5b6169;
+    --line: #d8dce0;
+    --bg: #ffffff;
+    --flaeche: #f4f6f7;
+    --accent: #0f7a5a;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --text: #e8e9ec;
-      --muted: #a2a6b0;
-      --line: #2c2f36;
-      --akzent: #4c9dff;
-      --flaeche: #1b1d22;
+      --ink: #e6e8ea;
+      --muted: #9ba2a8;
+      --line: #2d3238;
+      --bg: #14171a;
+      --flaeche: #1d2126;
+      --accent: #3fae87;
     }
-    body { background: #121316; }
   }
-
   * { box-sizing: border-box; }
-
   body {
     margin: 0;
-    padding: 32px 20px 80px;
-    color: var(--text);
-    background: #fff;
-    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
-  }
-  @media (prefers-color-scheme: dark) { body { background: #121316; } }
-
-  main { max-width: 720px; margin: 0 auto; }
-
-  h1 {
-    font-size: 26px;
-    line-height: 1.25;
-    margin: 0 0 4px;
-    letter-spacing: -0.3px;
-  }
-  .app { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
-
-  h2 {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
     font-size: 17px;
-    margin: 34px 0 10px;
-    padding-top: 20px;
-    border-top: 1px solid var(--line);
+    line-height: 1.65;
+  }
+  main {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.4rem;
+  }
+  .lead {
+    color: var(--muted);
+    margin: 0 0 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--accent);
+  }
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2.75rem 0 0.6rem;
     display: flex;
-    gap: 10px;
+    gap: 0.6rem;
     align-items: baseline;
   }
-  /* Die Nummer trägt die Gliederung -- sie steht deshalb außen und in der
-     Akzentfarbe, nicht als Teil der Überschrift. */
   .nr {
-    color: var(--akzent);
+    color: var(--accent);
     font-variant-numeric: tabular-nums;
-    font-weight: 600;
-    min-width: 22px;
+    min-width: 1.3rem;
   }
-
-  p { margin: 0 0 12px; }
-  ul { margin: 0 0 14px; padding-left: 22px; }
-  li { margin-bottom: 5px; }
-
-  strong { font-weight: 600; }
-  a { color: var(--akzent); }
-
-  .stand { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
-
-  /* Serveradressen in Festbreitenschrift: Sie werden abgetippt oder
-     verglichen, und dabei zählt jedes Zeichen. */
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1.1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.35rem; }
+  a { color: var(--accent); }
+  address {
+    font-style: normal;
+    background: var(--flaeche);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    line-height: 1.55;
+    margin: 0 0 1rem;
+  }
   code {
     font: 0.9em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
     background: var(--flaeche);
     padding: 1px 5px;
     border-radius: 4px;
   }
-
-  /* Anschriften bleiben zeilenweise -- zusammengezogen liest sich eine
-     Adresse schlecht. */
-  .anschrift {
-    background: var(--flaeche);
-    border-radius: 8px;
-    padding: 14px 16px;
-    line-height: 1.55;
-  }
-
+  .stand { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
   footer {
-    margin-top: 48px;
-    padding-top: 18px;
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
     border-top: 1px solid var(--line);
     color: var(--muted);
-    font-size: 13px;
+    font-size: 0.9rem;
   }
 </style>
 </head>
@@ -102,14 +94,17 @@
 <main>
 
 <h1>Datenschutzerklärung</h1>
-<p class="app">OVMS Dashboard für Android und iOS</p>
+<p class="lead">OVMS Dashboard für Android und iOS</p>
 
 <p class="stand">Stand: 4. September 2026</p>
+
 <h2><span class="nr">1</span>Verantwortlicher</h2>
-<p class="anschrift">Ralph Grabe<br>Binswanger Straße 83<br>74076 Heilbronn<br>E-Mail: <a href="mailto:Ralph.Grabe@gmail.com">Ralph.Grabe@gmail.com</a></p>
+<address>Ralph Grabe<br>Watthalla<br>Binswanger Straße 83<br>74076 Heilbronn<br>E-Mail: <a href="mailto:Ralph.Grabe@gmail.com">Ralph.Grabe@gmail.com</a></address>
+
 <h2><span class="nr">2</span>Grundsatz</h2>
 <p>Diese App zeigt Daten deines Fahrzeugs an und erlaubt einige Befehle. Die Daten stammen je nach Einstellung von einem OVMS-Modul, von BMW CarData oder aus einer Vorführung mit erfundenen Werten.</p>
 <p>Der Anbieter dieser App betreibt <strong>keinen eigenen Server</strong>, erhebt keine Nutzungsdaten und bindet weder Werbung noch Analysedienste ein. Es werden keine Daten an den Anbieter übertragen.</p>
+
 <h2><span class="nr">3</span>Daten auf deinem Gerät</h2>
 <p>Folgende Angaben speichert die App ausschließlich lokal:</p>
 <ul>
@@ -126,11 +121,13 @@
 <p>Diese Daten verlassen das Gerät nicht. Sie werden gelöscht, wenn du das jeweilige Fahrzeug in der App entfernst oder die App deinstallierst.</p>
 <p><strong>Android:</strong> Die App ist von der automatischen Sicherung ausgenommen. Deine Zugangsdaten gelangen dadurch nicht in eine Cloud-Sicherung.</p>
 <p><strong>iOS:</strong> Die Einstellungen der App werden in die iCloud-Sicherung deines Geräts einbezogen, sofern du diese eingeschaltet hast. Das betrifft auch die Zugangsdaten und die Zugriffsmerkmale für BMW CarData. Wer das nicht möchte, kann die Sicherung für diese App in den iOS-Einstellungen abschalten.</p>
+
 <h2><span class="nr">4</span>Verbindung zum OVMS-Server</h2>
 <p>Um Fahrzeugdaten anzuzeigen, verbindet sich die App mit dem Server, den du in den Einstellungen hinterlegst. Voreingestellt sind die öffentlichen Server des OVMS-Projekts; du kannst stattdessen einen eigenen Server angeben.</p>
 <p>Übertragen werden Fahrzeug-ID, Passwort und deine IP-Adresse. Welche Daten der Serverbetreiber speichert, richtet sich nach dessen Datenschutzerklärung. Der Anbieter dieser App hat darauf keinen Einfluss.</p>
 <p>Die Verbindung erfolgt wahlweise über einen regelmäßigen Abruf oder über eine dauerhafte Verbindung („Live“). In beiden Fällen werden dieselben Angaben übertragen; die dauerhafte Verbindung überträgt sie einmalig beim Aufbau.</p>
 <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO — die Verbindung ist zur Nutzung der App erforderlich.</p>
+
 <h2><span class="nr">5</span>BMW CarData</h2>
 <p>Wählst du als Datenquelle „BMW CarData“, verbindet sich die App mit Servern der BMW Group:</p>
 <ul>
@@ -143,41 +140,49 @@
 <p>Die App legt bei BMW einen sogenannten Datencontainer an, der festlegt, welche Fahrzeugdaten abgerufen werden. Er lässt sich in der App wieder entfernen.</p>
 <p>Datenschutzhinweise von BMW: <a href="https://www.bmw.de/de/footer/metanavigation/data-privacy.html">www.bmw.de/de/footer/metanavigation/data-privacy.html</a><br>Gesondert für CarData: <a href="https://www.bmw.de/de-de/mybmw/api/policy/download/CARDATA_DPP">BMW CarData Datenschutzhinweise</a></p>
 <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO — die Verbindung ist zur Nutzung dieser Datenquelle erforderlich und erfolgt nur, wenn du sie einrichtest.</p>
+
 <h2><span class="nr">6</span>evcc im Heimnetz</h2>
 <p>Trägst du unter „Smart Home“ eine evcc-Anlage ein, verbindet sich die App mit der von dir angegebenen Adresse in deinem Heimnetz. Sie liest den Zustand der Ladestelle und schaltet auf deine Eingabe hin den Lademodus oder das Ladelimit.</p>
 <p>Nutzt du zugleich BMW CarData, kann die App den Ladestand von evcc übernehmen, sofern evcc ihn kennt. Auch dieser Vorgang bleibt in deinem Netz.</p>
 <p>Diese Verbindung verlässt dein Netz nicht. Es werden keine Daten an Dritte übertragen. Die App nimmt ausschließlich Adressen aus privaten Netzbereichen an; eine aus dem Internet erreichbare Anlage lässt sich nicht eintragen.</p>
 <p><strong>Unverschlüsselte Verbindungen:</strong> Anlagen im Heimnetz sprechen üblicherweise ohne Verschlüsselung, weil es für private Adressen keine Zertifikate gibt. Die App lässt solche Verbindungen deshalb zu. Die Server von OVMS und BMW werden ausschließlich verschlüsselt angesprochen.</p>
 <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
+
 <h2><span class="nr">7</span>Standortdaten</h2>
 <p>Die App fordert <strong>keine Standortberechtigung</strong> an und greift nicht auf den Standort deines Telefons zu.</p>
 <p>Die angezeigte Fahrzeugposition stammt vom OVMS-Modul beziehungsweise von BMW CarData. Sie wird in der App angezeigt und nicht dauerhaft gespeichert.</p>
 <p><strong>Android:</strong> Der Standort-Reiter zeigt einen schematischen Plan, der aus den Koordinaten selbst gezeichnet wird. Es wird dafür keine Karte von einem fremden Server geladen.</p>
 <p><strong>iOS:</strong> Der Standort-Reiter zeigt eine Karte aus Apple Karten, dem in iOS eingebauten Kartendienst. Zur Darstellung werden die Koordinaten des Fahrzeugs an Apple übermittelt. Es gelten die Datenschutzbestimmungen von Apple.</p>
 <p>Tippst du auf einen der Navigationsknöpfe, öffnet die App die Karten-App des Systems mit den Zielkoordinaten — auf Android Google Maps, auf iOS Apple Karten. Ab diesem Moment gelten die Bestimmungen des jeweiligen Anbieters.</p>
+
 <h2><span class="nr">8</span>Adressanzeige</h2>
 <p>Zur Anzeige einer lesbaren Adresse nutzt die App die im Betriebssystem eingebaute Adressauflösung. Dabei werden die Koordinaten des Fahrzeugs an den Dienst des Systemanbieters übermittelt — auf Android an Google, auf iOS an Apple. Verantwortlich ist der jeweilige Anbieter.</p>
+
 <h2><span class="nr">9</span>Übertragung an eine Uhr</h2>
 <p>Ist eine Smartwatch gekoppelt, überträgt die App einen Auszug der Fahrzeugdaten dorthin: Fahrzeugname, Ladestand, Reichweite, Ladezustand, Verriegelung und — auf der Apple Watch — das von dir gewählte Fahrzeugbild.</p>
 <p>Die Übertragung läuft über die Gerätekopplung des jeweiligen Systems und verlässt deine Geräte nicht.</p>
 <p>Zugangsdaten werden nicht übertragen. Auf der Uhr werden die Werte gespeichert, damit sie auch ohne Verbindung zum Telefon sichtbar bleiben; sie werden mit der Uhrenfassung der App gelöscht.</p>
 <p><strong>Anzeige auf dem Zifferblatt:</strong> Legst du den Ladestand als Komplikation auf das Zifferblatt, greift diese auf dieselben, auf der Uhr gespeicherten Werte zu. Es werden dafür keine zusätzlichen Daten erhoben oder übertragen.</p>
+
 <h2><span class="nr">10</span>Protokoll</h2>
 <p>Die App führt ein Protokoll der letzten Verbindungsvorgänge, das du unter „Benutzer“ beziehungsweise „Mehr“ einsehen und weitergeben kannst. Es enthält Zeitpunkte, Verbindungsziele, Fehlermeldungen und — sofern eingeschaltet — empfangene Fahrzeugwerte.</p>
 <p><strong>Zugangsdaten und Passwörter stehen nicht darin.</strong> Die Weitergabe erfolgt nur auf deine ausdrückliche Handlung und an einen Empfänger deiner Wahl.</p>
 <p>Beachte, dass das Protokoll je nach Datenquelle die Fahrzeugidentifikationsnummer, die Kundenkennung deines BMW-Kontos und Standortangaben enthalten kann. Prüfe es vor der Weitergabe.</p>
+
 <h2><span class="nr">11</span>Keine Weitergabe an Dritte</h2>
 <p>Über die in den Abschnitten 4 bis 9 genannten Fälle hinaus werden keine Daten weitergegeben. Es findet keine Profilbildung und keine automatisierte Entscheidungsfindung statt.</p>
+
 <h2><span class="nr">12</span>Deine Rechte</h2>
-<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Aufsichtsbehörde zu beschweren.</p>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Aufsichtsbehörde zu beschweren. Zuständig ist der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg.</p>
 <p>Da der Anbieter dieser App keine personenbezogenen Daten verarbeitet, richten sich Auskunfts- und Löschungsersuchen an die jeweilige Stelle: für Fahrzeugdaten aus OVMS an den Betreiber des von dir genutzten Servers, für Daten aus CarData an die BMW Group. Die lokal gespeicherten Daten kannst du jederzeit selbst löschen, indem du das Fahrzeug in der App entfernst oder die App deinstallierst.</p>
 <p>Deinen Zugang zu BMW CarData kannst du in der App beenden; die App löscht dabei ihre Zugriffsmerkmale und kann den bei BMW angelegten Datencontainer entfernen.</p>
+
 <h2><span class="nr">13</span>Kontakt</h2>
-<p class="anschrift">Ralph Grabe<br>E-Mail: <a href="mailto:Ralph.Grabe@gmail.com">Ralph.Grabe@gmail.com</a></p>
+<address>Ralph Grabe<br>Watthalla<br>E-Mail: <a href="mailto:Ralph.Grabe@gmail.com">Ralph.Grabe@gmail.com</a></address>
 
 <footer>
-  Diese App speichert Daten ausschließlich auf deinem Gerät. Der Anbieter
-  betreibt keinen Server und erhält keine Nutzungsdaten.
+  <p>Diese App speichert Daten ausschließlich auf deinem Gerät. Der Anbieter betreibt keinen Server und erhält keine Nutzungsdaten.</p>
+  <p><a href="impressum.html">Impressum</a></p>
 </footer>
 
 </main>
