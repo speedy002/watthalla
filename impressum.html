@@ -10,7 +10,18 @@
     --muted: #5b6169;
     --line: #d8dce0;
     --bg: #ffffff;
+    --flaeche: #f4f6f7;
     --accent: #0f7a5a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e6e8ea;
+      --muted: #9ba2a8;
+      --line: #2d3238;
+      --bg: #14171a;
+      --flaeche: #1d2126;
+      --accent: #3fae87;
+    }
   }
   * { box-sizing: border-box; }
   body {
@@ -40,8 +51,15 @@
     margin: 2.5rem 0 0.5rem;
   }
   p { margin: 0 0 1rem; }
-  address { font-style: normal; }
   a { color: var(--accent); }
+  address {
+    font-style: normal;
+    background: var(--flaeche);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    line-height: 1.55;
+    margin: 0 0 1rem;
+  }
   .kontakt dt {
     color: var(--muted);
     font-size: 0.9rem;
