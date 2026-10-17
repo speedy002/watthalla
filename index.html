@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watthalla – EV Dashboard</title>
+<style>
+  :root {
+    --text: #161a22;
+    --muted: #5f636d;
+    --line: #e2e5ea;
+    --akzent: #0b72e7;
+    --flaeche: #f7f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e8e9ec;
+      --muted: #a2a6b0;
+      --line: #2c2f36;
+      --akzent: #4c9dff;
+      --flaeche: #1b1d22;
+    }
+    body { background: #121316; }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 32px 20px 80px;
+    color: var(--text);
+    background: #fff;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { body { background: #121316; } }
+
+  main { max-width: 720px; margin: 0 auto; }
+
+  h1 {
+    font-size: 26px;
+    line-height: 1.25;
+    margin: 0 0 4px;
+    letter-spacing: -0.3px;
+  }
+  .app { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+
+  h2 {
+    font-size: 17px;
+    margin: 34px 0 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+  /* Die Nummer trägt die Gliederung -- sie steht deshalb außen und in der
+     Akzentfarbe, nicht als Teil der Überschrift. */
+  .nr {
+    color: var(--akzent);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    min-width: 22px;
+  }
+
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 5px; }
+
+  strong { font-weight: 600; }
+  a { color: var(--akzent); }
+
+  .stand { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+
+  /* Serveradressen in Festbreitenschrift: Sie werden abgetippt oder
+     verglichen, und dabei zählt jedes Zeichen. */
+  code {
+    font: 0.9em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    background: var(--flaeche);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  /* Anschriften bleiben zeilenweise -- zusammengezogen liest sich eine
+     Adresse schlecht. */
+  .anschrift {
+    background: var(--flaeche);
+    border-radius: 8px;
+    padding: 14px 16px;
+    line-height: 1.55;
+  }
+
+  /* Ein Kasten für das, was die App von sich aus NICHT tut -- das
+     sucht man beim Lesen zuerst. */
+  .nicht {
+    border-left: 3px solid var(--akzent);
+    padding: 2px 0 2px 14px;
+    margin: 0 0 14px;
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Watthalla</h1>
+<p class="app">EV Dashboard für iPhone, Apple Watch und Android</p>
+
+<p>Die App zeigt dir dein Elektroauto auf einen Blick: Ladestand,
+Reichweite, Klimaanlage, Laden. Sie funktioniert mit OVMS-Modulen und
+BMW CarData.</p>
+
+<p>Bei Nissan Leaf und e-NV200 bringt sie die Lüftersteuerung zurück,
+die nach dem Freischalten von CarPlay im Originaldisplay fehlt – als
+Karte im CarPlay-Dashboard.</p>
+
+<h2>Rechtliches</h2>
+<ul>
+  <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+  <li><a href="impressum.html">Impressum</a></li>
+</ul>
+
+<h2>Kontakt</h2>
+<p class="anschrift">
+Ralph Grabe · Watthalla<br>
+E-Mail: <a href="mailto:Ralph.Grabe@gmail.com">Ralph.Grabe@gmail.com</a>
+</p>
+
+</main>
+</body>
+</html>
